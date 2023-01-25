@@ -12,7 +12,7 @@ license = "MIT"
 name = "ihelper"
 readme = "README.md"
 repository = "https://github.com/liblaf/ihelper"
-version = "0.0.0"
+version = "0.1.0"
 
 [tool.poetry.dependencies]
 click = "^8.1.3"
