@@ -117,7 +117,7 @@ jobs:
           - ubuntu-latest
           - windows-latest
         python-version:
-          - ${{ env.PYTHON_VERSION }}
+          - "3.11"
 
   release:
     name: Create GitHub Release
