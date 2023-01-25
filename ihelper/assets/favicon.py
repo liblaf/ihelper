@@ -36,6 +36,12 @@ def main(color: str, output: str | Path) -> None:
             color,
             "-colorize",
             "100",
+            "-resize",
+            "512x512",
+            "-gravity",
+            "center",
+            "-extent",
+            "512x512",
         ]
         run(args=[*args, png])
         run(args=[*args, "-resize", "128x128", ico])
