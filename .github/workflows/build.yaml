@@ -131,7 +131,6 @@ jobs:
         uses: google-github-actions/release-please-action@v3
         with:
           release-type: python
-          package-name: ${{ github.event.repository.name }}
 
   upload:
     name: Upload Release Assets
