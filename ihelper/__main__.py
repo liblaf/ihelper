@@ -4,6 +4,7 @@ import click
 from ishutils.config import config
 from ishutils.logging import install
 
+from . import __version__
 from .assets.main import main as cmd_assets
 from .git.main import main as cmd_git
 from .key.main import main as cmd_key
@@ -17,6 +18,7 @@ from .update.main import main as cmd_update
     default=logging.getLevelName(logging.INFO),
 )
 @click.option("-y", "--yes", is_flag=True)
+@click.version_option(version=__version__)
 def main(log_level: str, yes: bool) -> None:
     install(level=logging.getLevelName(log_level))
     config.yes = yes
