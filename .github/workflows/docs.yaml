@@ -8,6 +8,9 @@ on:
 permissions:
   contents: write
 
+env:
+  PYTHON_VERSION: "3.11"
+
 jobs:
   detect:
     name: Detect MkDocs Config
@@ -42,7 +45,7 @@ jobs:
       - name: Setup Python
         uses: actions/setup-python@v4
         with:
-          python-version: "3.11"
+          python-version: ${{ env.PYTHON_VERSION }}
           cache: poetry
       - name: Install Dependencies
         run: poetry install --with docs --no-interaction

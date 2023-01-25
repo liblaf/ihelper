@@ -11,6 +11,9 @@ permissions:
   contents: write
   pull-requests: write
 
+env:
+  PYTHON_VERSION: "3.11"
+
 jobs:
   detect-build:
     name: Detect Build Script
@@ -63,7 +66,7 @@ jobs:
         name: Setup Python
         uses: actions/setup-python@v4
         with:
-          python-version: "3.11"
+          python-version: ${{ env.PYTHON_VERSION }}
           cache: poetry
       - name: Install Dependencies
         run: poetry install --no-interaction
@@ -114,7 +117,7 @@ jobs:
           - ubuntu-latest
           - windows-latest
         python-version:
-          - "3.11"
+          - ${{ env.PYTHON_VERSION }}
 
   release:
     name: Create GitHub Release
@@ -123,15 +126,12 @@ jobs:
       releases-created: ${{ steps.release.outputs.releases_created }}
       tag-name: ${{ steps.release.outputs.tag_name }}
     steps:
-      - name: Download Artifacts
-        uses: actions/download-artifact@v3
-        with:
-          path: artifacts
       - id: release
         name: Create GitHub Release
         uses: google-github-actions/release-please-action@v3
         with:
           release-type: python
+          package-name: ${{ github.event.repository.name }}
 
   upload:
     name: Upload Release Assets
@@ -169,7 +169,7 @@ jobs:
       - name: Setup Python
         uses: actions/setup-python@v4
         with:
-          python-version: "3.11"
+          python-version: ${{ env.PYTHON_VERSION }}
           cache: poetry
       - name: Install Dependencies
         run: poetry install --no-interaction
