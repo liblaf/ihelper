@@ -41,6 +41,6 @@ function run() {
 workspace="$(git rev-parse --show-toplevel || pwd)"
 cd "${workspace}"
 
-run bash "scripts/build.sh"
+run bash "script/build.sh"
 name="$(poetry version | awk '{ print $1 }')"
 copy "dist/${name}" "${HOME}/.local/bin/${name}"
