@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.1.1](https://github.com/liblaf/ihelper/compare/v0.1.0...v0.1.1) (2023-01-25)
+
+
+### Bug Fixes
+
+* **assets.favicon:** extent to square ([56e06e7](https://github.com/liblaf/ihelper/commit/56e06e781872fb82376c265cbb81e0f44baf511f))
+
 ## 0.1.0 (2023-01-25)
 
 ### Bug Fixes
