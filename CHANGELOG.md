@@ -1,5 +1,17 @@
 # Changelog
 
+## [0.1.2](https://github.com/liblaf/ihelper/compare/v0.1.1...v0.1.2) (2023-02-07)
+
+
+### Bug Fixes
+
+* **assets:** change default color ([8ffe277](https://github.com/liblaf/ihelper/commit/8ffe27703877176dcb021a8b58a5c592eb2cb86c))
+
+
+### Documentation
+
+* add LICENSE ([d03b5ad](https://github.com/liblaf/ihelper/commit/d03b5adb7ccd52ef8e5b148b74d4c4a7dd80847f))
+
 ## [0.1.1](https://github.com/liblaf/ihelper/compare/v0.1.0...v0.1.1) (2023-01-25)
 
 ### Bug Fixes
