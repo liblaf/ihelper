@@ -10,7 +10,7 @@ from .typing import FONT_AWESOME_URL
 
 
 @click.command(name="favicon")
-@click.option("-c", "--color", default="cyan")
+@click.option("-c", "--color", default="#48BEF3")
 @click.option(
     "-o",
     "--output",
