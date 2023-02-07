@@ -578,14 +578,14 @@ testing = ["flake8 (<5)", "flufl.flake8", "importlib-resources (>=1.3)", "packag
 
 [[package]]
 name = "ishutils"
-version = "0.1.2"
+version = "0.2.0"
 description = "My Shell Utils"
 category = "main"
 optional = false
 python-versions = ">=3.11,<4.0"
 files = [
-    {file = "ishutils-0.1.2-py3-none-any.whl", hash = "sha256:857b1da4bc750a2e9f6cc09b5f7927b3ba197b357e09a7c78190169aad651a14"},
-    {file = "ishutils-0.1.2.tar.gz", hash = "sha256:0bc4d04096cbeff1a17a9d1464614cf93d04bc1359f13ecbfba98c55bbfbe8d2"},
+    {file = "ishutils-0.2.0-py3-none-any.whl", hash = "sha256:75a3b03cfbe322b96b22128ece877098de5a5adf15130963a35ae01220f874ba"},
+    {file = "ishutils-0.2.0.tar.gz", hash = "sha256:2d5163ea59d05be39064e6faec48ee878ca53ae4e2f7b01ffa05e98a37dc41f5"},
 ]
 
 [package.dependencies]
@@ -1699,4 +1699,4 @@ testing = ["flake8 (<5)", "func-timeout", "jaraco.functools", "jaraco.itertools"
 [metadata]
 lock-version = "2.0"
 python-versions = ">=3.11,<3.12"
-content-hash = "e768a518fcb79f612b27297141a70b2ce7e4392d956818b10bbef0a4a96898d0"
+content-hash = "b5abfa0cbb09726b6c2455acfba04eb327ca33991ce473d9d817307086520ea2"
